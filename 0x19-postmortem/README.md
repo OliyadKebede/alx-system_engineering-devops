@@ -37,5 +37,5 @@ require outreach to users.
 - We will take a more proactive stance in testing our assumptions.
 
 ### Conclusion
-    We know how much you rely on GitHub for your projects and businesses to succeed. No one is more passionate about the availability of our services and the 
-    correctness of your data. We will continue to analyze this event for opportunities to serve you better and earn the trust you place in us.
+We know how much you rely on GitHub for your projects and businesses to succeed. No one is more passionate about the availability of our services and the 
+correctness of your data. We will continue to analyze this event for opportunities to serve you better and earn the trust you place in us.
