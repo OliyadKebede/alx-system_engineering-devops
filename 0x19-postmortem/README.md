@@ -1,7 +1,7 @@
 Postmortem Report
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/OliyadKebede/alx-system_engineering-devops/main/0x19-postmortem/report_cover_picture.png" width=100% height=100% />
+<img src="https://raw.githubusercontent.com/OliyadKebede/alx-system_engineering-devops/main/0x19-postmortem/report_cover_picture.PNG" width=100% height=100% />
 </p>
 
 # GitHub services were affected on October 22  post-incident analysis
