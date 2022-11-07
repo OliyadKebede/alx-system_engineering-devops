@@ -5,6 +5,7 @@ Postmortem Report
 
 ## Incident Timeline
 **2018 October 21 22:52 UTC** - Because the database clusters in the US East and West Coast data centers now contained writes that were not present in the other data center, we were unable to fail the primary back over to the US East Coast data center safely.
+
 **2018 October 21 22:54 UTC** - By this point the responding team decided to manually lock our internal deployment tooling to prevent any additional changes from being introduced.
 **2018 October 21 23:13 UTC** - It was understood at this time that the problem affected multiple database clusters.
 **2018 October 21 23:19 UTC** - We made an explicit choice to partially degrade site usability by pausing webhook delivery and GitHub Pages builds instead of jeopardizing data we had already received from users.
