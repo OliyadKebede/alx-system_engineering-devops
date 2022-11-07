@@ -25,10 +25,10 @@ provide webhook events.
 **2018 October 22 07:46 UTC** - We intended to send this communication out much sooner and will be ensuring we can publish updates in the future under these constraints
 
 ### Root Cause and Resolution
-        During our recovery, we captured the MySQL binary logs containing the writes we took in our primary site that were not replicated to our West Coast site from
-        each affected cluster. The total number of writes that were not replicated to the West Coast was relatively small. For example, one of our busiest clusters had
-        954 writes in the affected window. We are currently performing an analysis on these logs and determining which writes can be automatically reconciled and which
-        will require outreach to users.
+ During our recovery, we captured the MySQL binary logs containing the writes we took in our primary site that were not replicated to our West Coast site from
+each affected cluster. The total number of writes that were not replicated to the West Coast was relatively small. For example, one of our busiest clusters had
+954 writes in the affected window. We are currently performing an analysis on these logs and determining which writes can be automatically reconciled and which will
+require outreach to users.
 
 ### Corrective and Preventive Measures
 - Adjust the configuration of Orchestrator to prevent the promotion of database primaries across regional boundaries.
