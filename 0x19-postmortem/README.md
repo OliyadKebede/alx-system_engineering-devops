@@ -2,6 +2,9 @@ Postmortem Report
 
 # GitHub services were affected on October 22  post-incident analysis
 
+### Summary
+       GitHub had a problem last week that caused the service to be down for 24 hours and 11 minutes. While certain parts of our platform were not impacted by this incident, several internal systems were, which led to the display of outdated and conflicting information. No user data was ultimately lost, however manual reconciliation for a brief period of database writes is still ongoing. Additionally, throughout the majority of the incident, GitHub was unable to create and publish GitHub Pages sites or provide webhook events.
+
 
 ## Incident Timeline
 **2018 October 21 22:52 UTC** - Because the database clusters in the US East and West Coast data centers now contained writes that were not present in the other data center, we were unable to fail the primary back over to the US East Coast data center safely.
