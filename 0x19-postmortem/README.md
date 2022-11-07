@@ -11,9 +11,13 @@ Postmortem Report
 
 **2018 October 21 22:54 UTC** - By this point the responding team decided to manually lock our internal deployment tooling to prevent any additional changes from being introduced.
 **2018 October 21 23:13 UTC** - It was understood at this time that the problem affected multiple database clusters.
+
 **2018 October 21 23:19 UTC** - We made an explicit choice to partially degrade site usability by pausing webhook delivery and GitHub Pages builds instead of jeopardizing data we had already received from users.
+
 **2018 October 22 00:41 UTC** - A backup process for all affected MySQL clusters had been initiated by this time and engineers were monitoring progress.
+
 **2018 October 22 06:51 UTC** -Our teams had identified ways to restore directly from the West Coast to overcome throughput restrictions caused by downloading from off-site storage and were increasingly confident that restoration was imminent, and the time left to establishing a healthy replication topology was dependent on how long it would take replication to catch up.
+
 **2018 October 22 07:46 UTC** - We intended to send this communication out much sooner and will be ensuring we can publish updates in the future under these constraints
 
 ### Root Cause and Resolution
